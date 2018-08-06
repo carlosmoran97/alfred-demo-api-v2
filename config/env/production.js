@@ -40,6 +40,6 @@ module.exports = {
     adapter: 'connect-mongo',
     url: process.env.MONGODB_URI
   }
-}
+
 
 };
