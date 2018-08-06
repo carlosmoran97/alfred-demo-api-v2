@@ -20,7 +20,9 @@ module.exports = {
   // models: {
   //   connection: 'someMysqlServer'
   // },
-
+  models: {
+    connection: 'productionMongo'
+  },
   /***************************************************************************
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
@@ -34,5 +36,10 @@ module.exports = {
   // log: {
   //   level: "silent"
   // }
+  session: {
+    adapter: 'connect-mongo',
+    url: process.env.MONGODB_URI
+  }
+}
 
 };

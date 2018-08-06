@@ -80,6 +80,11 @@ module.exports.connections = {
     user: 'postgres', // optional
     password: '', // optional
     database: 'alfred-api' //optional
+  },
+
+  productionMongo: {
+    adapter: 'sails-mongo',
+    url: process.env.MONGODB_URI
   }
 
 
